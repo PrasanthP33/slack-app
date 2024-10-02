@@ -307,3 +307,15 @@ footer{
 .footer_list a:hover{
     color: #1264a3;
 }
+
+@media screen and (max-width: 556px) {
+    footer ul{
+      /* background-color: blue; */
+      display: flex;
+      flex-direction: column;
+
+    }
+    footer>div p{
+        text-align: start;
+    }
+  }
