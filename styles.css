@@ -212,13 +212,13 @@ a {
     border: 1px solid #fff;
     margin-right: 5px;
 }
-.boxicon_container{
-    position: relative;
-}
+
 .person_a+.boxicon {
     position: absolute;
-    right: 7%;  
-    top: 24%;
+    right: 0;
+    left: 310px;
+    bottom: 0;
+    top: 144px;
 }
 
 .boxicon+p {
@@ -307,15 +307,3 @@ footer{
 .footer_list a:hover{
     color: #1264a3;
 }
-
-@media screen and (max-width: 556px) {
-    footer ul{
-      /* background-color: blue; */
-      display: flex;
-      flex-direction: column;
-
-    }
-    footer>div p{
-        text-align: start;
-    }
-  }
