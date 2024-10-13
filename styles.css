@@ -4,6 +4,8 @@
 * {
     box-sizing: border-box;
     font-family: 'Salesforce-Avan', system-ui, '-apple-system', 'blinkmacsystemfont', 'Segoe UI', 'roboto', 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    padding: 0;
+    margin: 0;
 }
 
 .card {
@@ -84,7 +86,9 @@ a {
     font-size: 50px;
     font-weight: 700;
 }
-
+.billboard .row{
+    margin-left: 0;
+}
 .billboard p {
     font-size: 20px;
     font-weight: 400;
@@ -156,6 +160,9 @@ a {
 .connect_tools {
     margin-top: 5rem;
 }
+.connect_tools div img {
+   max-width: 100%;
+}
 
 /* .connect_tools .card {
     border: none;
@@ -214,7 +221,7 @@ a {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
-    background-image: url('./icons/icon_arrow.svg');
+    background-image: url('./icons/icon_black_arrow.svg');
 }
 
 .built_for_roles .card_wrapper .card:hover {
@@ -222,7 +229,9 @@ a {
     color: #1264a3;
     transform: scale(1.05);
 }
-
+.built_for_roles .card_wrapper .card:hover::after {
+    background-image: url('./icons/icon_blue_arrow.svg');
+}
 
 .built_for_roles .card_wrapper .card p {
     font-size: 1.125rem;
@@ -233,16 +242,25 @@ a {
     width: 50px;
     height: 50px;
 }
-
+.built_for_roles .card_wrapper .card:hover div svg path{
+    fill: #1264a3;
+}
+.contact_sales{
+    margin-bottom: 3rem;
+}
 .contact_sales .bg_purple{
     margin-top: 5rem;
-    height: 250px;
+    /* height: 250px; */
     width: 100%;
     background-color: #4a154b;
     border: 1px solid black;
-    border-radius: 0 0 80% 80%;
-    transform: scale(1.3);
+    clip-path: ellipse(75% 100% at center top);
+    height: auto;
+    min-height: 370px;
+    /* border-radius: 0 0 80% 80%; */
+    /* transform: scale(1.3); */
     overflow-x: hidden;
+    /* position: absolute; */
 }
 
 .sales_content h1{
@@ -310,13 +328,16 @@ a {
     border: 1px solid #fff;
     margin-right: 5px;
 }
-
+/* .cf_img_wrapper{
+    position: relative;
+} */
+ .img_container{
+    position: relative;
+ }
 .person_a+.boxicon {
     position: absolute;
-    right: 0;
-    left: 310px;
-    bottom: 0;
-    top: 144px;
+    right: 5px;
+    top: 27px;
 }
 
 
@@ -391,7 +412,7 @@ a {
 }
 .blog_section {
     padding: 10% 12%;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
 }
 
 .blog_section h1 {
@@ -505,6 +526,9 @@ footer {
     /* body{
         max-width: 100%;
     } */
+     h1{
+        font-size: 30px !important;
+     }
     .billboard_text h1 {
         font-size: 30px;
         /* color: #2bac76; */
@@ -522,7 +546,35 @@ footer {
     .nav_list_wrapper {
         display: none;
     }
-
+    .left_card_leftsection{
+        display: none;
+    }
+    .left_card_rightsection{
+        width: 100%;
+    }
+    .connect_tools div img{
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .left_arrow{
+        display: none;
+    }
+    .right_arrow{
+        display: none;
+    }
+    .get_more {
+        padding: 0;
+    }
+    .get_more .card-container .card {
+        padding-left: 12px;
+        border: none;
+    }
+    .left_card_rightsection .padding {
+        padding: 10px 20px 10px 20px;
+    }
+    .contact_sales .bg_purple {
+        min-height: 270px;
+    }
     footer ul {
         /* background-color: blue; */
         display: flex;
